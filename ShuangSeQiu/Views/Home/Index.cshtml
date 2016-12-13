@@ -33,9 +33,10 @@
 
         td {
             border: 1px solid #ff2700;
+            font-size:x-large;
         }
 
-        #ball7 {
+        .ball7 {
             color: blue;
         }
     </style>
@@ -49,7 +50,7 @@
                         function (array) {
                             var tr2 = $('#tr2');
                             tr2.empty();
-                            tr2.append('<td>' + array[0] + '</td><td>' + array[1] + '</td><td>' + array[2] + '</td><td>' + array[3] + '</td><td>' + array[4] + '</td><td>' + array[5] + '</td><td>' + array[6] + '</td>');
+                            tr2.append('<td>' + array[0] + '</td><td>' + array[1] + '</td><td>' + array[2] + '</td><td>' + array[3] + '</td><td>' + array[4] + '</td><td>' + array[5] + '</td><td class="ball7">' + array[6] + '</td>');
                         }
                     );
             });
@@ -59,9 +60,9 @@
 <body>
     <div>
         <table>
-            <tr><th>红球1</th><th>红球2</th><th>红球3</th><th>红球4</th><th>红球5</th><th>红球6</th><th id="ball7">蓝球7</th></tr>
+            <tr><th>红球1</th><th>红球2</th><th>红球3</th><th>红球4</th><th>红球5</th><th>红球6</th><th class="ball7">蓝球7</th></tr>
             <tr id="tr2"><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td colspan="7"><input type="submit" value="开始" id="start" /></td></tr>
+            <tr><td colspan="7"><input type="submit" value="开始" id="start" style="height: 50px;width: 100px;" /></td></tr>
         </table>
     </div>
 </body>
